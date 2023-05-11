@@ -1,22 +1,38 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
       Blank
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-row>
+    <ion-col size="6" class="left">
+      <div class="image">
+      <!-- <img src="https://images.pexels.com/photos/16401178/pexels-photo-16401178.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagem criança"> -->
+      <img src="../../assets/images/ney-rosa.jpg" alt="Neymar com rosa">
+      </div>
+    </ion-col>
+    <ion-col size="6" class="right">
+      <ion-col size="8" class="container">
+        <!-- titulo -->
+        <ion-label class="title">Criar Conta</ion-label>
 
-  <div id="container">
-    <h3>Projeto com Bootstrap e Ionic!</h3>
-    <hr>
-    <p>Componentes Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components"> - UI Components</a></p>
-    <p>Componentes Bootstrap <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/5.3/components/buttons/"> - UI Components</a></p>
-  </div>
+        <!-- inputs -->
+          <ion-input label="Nome" class="input"></ion-input>
+          <ion-input label="E-mail" class="input"></ion-input>
+          <ion-input label="Senha" class="input"></ion-input>
+          <ion-input label="Confirmar senha" class="input"></ion-input>
+
+
+        <!-- botoes -->
+        <ion-button class="button create-account" color="primary">Criar Conta!</ion-button>
+        <ion-label>Login com:</ion-label>
+        <ion-button class="button" color="secondary">Facebook</ion-button>
+        <ion-button class="button" color="tertiary">Twitter</ion-button>
+        <ion-button class="button" color="danger">Google</ion-button>
+      </ion-col>
+    </ion-col>
+  </ion-row>
 </ion-content>
